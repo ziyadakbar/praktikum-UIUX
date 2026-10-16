@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html><lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scal"
+    <title</title>
+</head>
+<body>
+  <h1>form pemesanan pizza</h1>
+  <p>
+    silakan isi form pemesanan ini dengan lengkap dan benar.
+  </p>
+  <form action="http://www.blackgoosebistro.com/pizza.php" method="post">
+    <fieldset>
+      <legend>Informasi pemesanan</legend>
+      <p>
+        <label for="costomername">Nama:</label>
+        <input type="text" id="costomername" name="costomername" required>
+      </p>
+      <p>
+        <label for="addres">addres:</label>
+        <input type="text" id="addres" name="addres" required>
+      </p>
+      <p>
+        <label for="costomername">telepon:</label>
+        <input type="text" id="costomername" name="costomername" required>
+      </p>
+      <p>
+        <label for="costomername">email:</label>
+        <input type="text" id="costomername" telepon="costomername" required>
+      </p>
+      <p> <label for="intruction">delivery intruction:</label><br>
+         <textarea
+            id="intruction"
+            name="intruction"
+            rows="4"
+            cols="50"
+            maxlength="400"
+            placeholder="no more than 400 characters"></textarea>
+        
+      </p>
+           
+    </fieldset>
+
+    <fieldset>
+       <legend>design your dream pizza</legend>
+      <p><strong>pizza specs</strong></p>
+      <p>pilih salah satu</p>
+
+      <p>
+        <input type="radio" id="classic" name="crust" value="classic white"
+        <label for="classic">classic white</label><br>
+        
+        <input type="radio" id="peperoni" name="crust" value="peperoni"
+        <label for="peperoni">peperoni</label><br>
+        
+        <input type="radio" id="chesee" name="crust" value="chesee"
+        <label for="chesee">chesee</label><br>
+        
+        <input type="radio" id="classic" name="crust" value="classic white"
+        <label for="classic">classic white</label><br>
+
+        
+      </p>
+
+      <p><strong>topping</strong></p>
+
+      <p>
+        <input type="checkbox" id="classic" name="toppings" value="red sauce"
+        <label for="classic">red sauce</label><br>
+        
+        <input type="checkbox" id="peperoni" name="toppings" value="peperoni"
+        <label for="peperoni">peperoni</label><br>
+        
+        <input type="checkbox" id="chesee" name="toppings" value="chesee"
+        <label for="chesee">chesee</label><br>
+        
+        <input type="checkbox" id="classic" name="toppings" value="classic white"
+        <label for="classic">classic white</label><br>
+      </p>
+
+      <p>
+        <label for="quantity">quantity</label>
+        <select id="quantity" name="quantity">
+              <option value="">--pilih jumlah--</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+        </select>
+      </p>
+    </fieldset>
+
+    <p>
+      <input type="submit" value="submit">
+      <input type="reset" value="reset">
+      
+    </p>
+  </form>
+</body>
+</html>
