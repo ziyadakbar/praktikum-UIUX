@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page - Ziyad Akbar Fashani</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            padding: 20px;
+            color: #333;
+        }
+
+        /* Container Pembungkus Halaman / Frame Mockup */
+        .page-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #fff;
+            border: 2px solid #333;
+            padding: 30px;
+        }
+
+        /* ================= 1. SECTION HEADER (PROFIL ATAS) ================= */
+        .profile-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 25px;
+            gap: 20px;
+        }
+
+        /* Foto Profil Kiri */
+        .profile-pic-container {
+            width: 150px;
+            height: 150px;
+            border: 2px solid #333;
+            flex-shrink: 0;
+        }
+
+        .profile-pic-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Detail Informasi Tengah */
+        .profile-info {
+            flex-grow: 1;
+            padding-left: 10px;
+        }
+
+        .profile-info h1 {
+            font-size: 26px;
+            font-weight: bold;
+            margin-bottom: 12px;
+        }
+
+        .profile-info p {
+            font-size: 13px;
+            line-height: 1.5;
+            margin-bottom: 3px;
+        }
+
+        .profile-info a {
+            color: #0000ff;
+            text-decoration: underline;
+        }
+
+        /* Navigasi / Categories Kanan */
+        nav.categories {
+            width: 150px;
+            text-align: right;
+        }
+
+        nav.categories h3 {
+            font-size: 14px;
+            text-decoration: underline;
+            margin-bottom: 6px;
+        }
+
+        nav.categories ul {
+            list-style: none;
+        }
+
+        nav.categories ul li a {
+            font-size: 12px;
+            color: #333;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        nav.categories ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* ================= 2. SECTION ARTIKEL (PARAGRAF TENGAH) ================= */
+        article.content-text {
+            margin-bottom: 30px;
+            font-size: 13px;
+            line-height: 1.6;
+        }
+
+        article.content-text p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        /* ================= 3. SECTION BOTTOM (MULTIMEDIA & ATTACHMENTS) ================= */
+        .bottom-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+            align-items: start;
+        }
+
+        /* Kotak 1: Video Player (Kiri) */
+        .video-box {
+            border: 1px solid #333;
+            padding: 5px;
+            background: #fff;
+        }
+
+        .video-box video {
+            width: 100%;
+            display: block;
+        }
+
+        /* Kotak 2: Koleksi Foto Grid 2x2 (Tengah) */
+        .gallery-box {
+            border: 1px solid #333;
+            padding: 8px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+            background: #fff;
+        }
+
+        .gallery-item {
+            border: 1px solid #333;
+            aspect-ratio: 1 / 1;
+            overflow: hidden;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Kotak 3: Attachments / Link Download (Kanan) */
+        .attachments-box {
+            border: 1px solid #333;
+            padding: 10px;
+            background: #fff;
+        }
+
+        .attachments-box fieldset {
+            border: none;
+        }
+
+        .attachments-box legend {
+            font-size: 13px;
+            font-weight: bold;
+            padding: 0 5px;
+        }
+
+        .attachments-box ul {
+            list-style: none;
+            margin-top: 5px;
+        }
+
+        .attachments-box ul li {
+            font-size: 12px;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .attachments-box ul li a {
+            color: #0000ff;
+            text-decoration: underline;
+        }
+
+        /* Responsive tampilan HP */
+        @media (max-width: 768px) {
+            .profile-header {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            nav.categories {
+                text-align: center;
+                width: 100%;
+            }
+            .bottom-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="page-container">
+        
+        <!-- Header Halaman Profil -->
+        <header class="profile-header">
+            <!-- Foto Profil -->
+            <div class="profile-pic-container">
+                <img src="bar.jpg"alt="Profile Picture">
+            </div>
+
+            <!-- Detail Biodata / Informasi Profil -->
+            <div class="profile-info">
+                <h1>Profile Name</h1>
+                <p>Nama: Ziyad Akbar Fashani </p>
+                <p>NIM:01100226115</p>
+                <p>Kelas: TI 01-Siang</p>
+                <p><strong>Email:</strong> <a href="ZiyadFashani@gmail.com">ZiyadFashani@gmail.com</a></p>
+                <p><strong>Telephone:</strong> 085893574967</p>
+            </div>
+
+            <!-- Categories / Navigasi Menu Kanan -->
+            <nav class="categories">
+                <h3><u>Tentang diri</u></h3>
+
+            </nav>
+        </header>
+
+        <!-- Bagian Paragraf Teks Deskripsi -->
+        <article class="content-text">
+            <p>Saya merupakan mahasiswa STT-Terpadu Nurul Fikri angkatan 2026, saat ini saya tinggal di bekasi, tepatnya di bekasi timur, pejalanan yang cukup jauh dan lama untuk saya pergi kuliah.
+            </p>
+            <p> saya seorang mahasiswa yang masih harus banyak belajar tentang jurusan yang saya ambil yaitu Teknik Informatika, karena jurusan ini tidak pernah saya pelajari di jenjang sebelum nya. 
+            </p>
+        </article>
+
+        <!-- Bagian Bawah: Video, Koleksi Foto 2x2, dan Lampiran -->
+        <section class="bottom-grid">
+            
+            <!-- Video Player -->
+            <div class="video-box">
+                <video controls width="100%">
+                    <source src="basket.mp4" type="video/mp4">
+                    Browser tidak mendukung video player.
+                </video>
+            </div>
+
+
+            <!-- Grid Foto 2x2 -->
+            <div class="gallery-box">
+                <div class="gallery-item"><img src="foto1.jpg" alt="Foto 1"></div>
+                <div class="gallery-item"><img src="foto2.jpg" alt="Foto 2"></div>
+                <div class="gallery-item"><img src="foto3.jpg" alt="Foto 3"></div>
+                <div class="gallery-item"><img src="foto4.jpg" alt="Foto 4"></div>
+            </div>
+          
+    <div class="attachments-box">
+                <fieldset>
+                    <legend>link download</legend>
+                    <ul>
+                        <li>📄 <a href="foto1.jpg" download>download foto 1.</a></li>
+                        <li>📄 <a href="foto2.jpg" download>download foto 2.</a></li>
+                        <li>📄 <a href="foto3.jpg" download>download foto 3.</a></li>
+                        <li>📄 <a href="foto4.jpg" download>download foto 4.</a></li>
+                    </ul>
+                </fieldset>
+            </div>
+
+            </div>
+
+            
+        
+
+        </section>
+
+    </div>
+
+</body>
+</html>
