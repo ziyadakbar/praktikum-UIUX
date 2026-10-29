@@ -1,0 +1,189 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(125, 164, 172);
+    margin: 0;
+    padding: 10px 20px;
+    color: #333;
+    font-size: 14px;
+}
+
+#header {
+    background-color: #f4dcb9; /* Latar belakang peach/krem untuk header */
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#header h1 {
+    color: blue;
+    font-size: 20px;
+    margin-top: 0;
+}
+
+#header blockquote {
+    background-color: #ffd700; /* Kuning terang untuk kutipan */
+    padding: 10px;
+    margin: 10px auto;
+    width: 90%;
+    font-style: italic;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+#soekarno {
+    display: block;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+/* Navigasi Menu */
+body > div:nth-of-type(2) ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+body > div:nth-of-type(2) ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+body > div:nth-of-type(2) ul li a {
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+}
+
+/* Gambar Atas */
+.gambar {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.gambar img {
+    max-width: 45%;
+    height: auto;
+}
+
+/* Bagian Isi / Paragraf */
+.isi p {
+    text-align: justify;
+    line-height: 1.6;
+}
+
+/* Drop Cap untuk huruf pertama paragraf pertama */
+.isi p:first-of-type::first-letter {
+    color: whitesmoke;
+    font-size: 3em;
+    float: left;
+    margin-right: 5px;
+    line-height: 0.8;
+}
+
+/* Profil dan Beternak */
+#profil, #beternak {
+    margin-bottom: 20px;
+}
+
+#profil h3, #beternak h3 {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+#profil ul {
+    padding-left: 20px;
+    line-height: 1.6;
+}
+
+#beternak ol {
+    padding-left: 20px;
+    line-height: 1.6;
+}
+
+#beternak h4 {
+    margin: 10px 0 5px 0;
+    font-size: 14px;
+}
+
+#beternak p {
+    margin-top: 0;
+    text-align: justify;
+}
+
+/* Gambar Koleksi */
+.koleksi {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.koleksi img {
+    width: 22%;
+    height: auto;
+    border: 3px solid white; /* Frame putih di sekeliling gambar */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Sedikit bayangan */
+}
+
+/* Promo Khusus */
+.promo {
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px 0;
+}
+
+.promo h2 {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.promo h3 {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.6;
+}
+
+.promo del {
+    color: red;
+}
+
+.promo strong {
+    color: red;
+}
+
+#Wa {
+    color: red;
+    font-weight: bold;
+}
+
+.promo h4 {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+/* Tombol eCommerce */
+.promo ol {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.promo ol li a {
+    background-color: #333; /* Warna gelap membulat */
+    color: white;
+    padding: 8px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.promo ol li a:hover {
+    background-color: #555;
+}
